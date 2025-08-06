@@ -39,6 +39,11 @@ export default function DataFMWorkshop() {
     e.preventDefault()
     setShowComingSoon(true)
   }
+// Define the Cloudinary background style here before the return
+  const cloudinaryBackgroundStyle: React.CSSProperties = {
+    backgroundImage:
+      "url(https://res.cloudinary.com/drp7gicqn/image/upload/v1754446161/golden-colorado-landscape_zfq7ac.webp)",
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -111,9 +116,7 @@ export default function DataFMWorkshop() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(/images/golden-colorado-landscape.webp)",
-          }}
+          style={cloudinaryBackgroundStyle}
         />
 
         {/* Dark Overlay for Text Readability */}
