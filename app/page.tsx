@@ -668,6 +668,49 @@ export default function DataFMWorkshop() {
                 </div>
               </div>
 
+              {/* Steering Committee */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+  <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+    Steering Committee
+  </h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {[
+      { name: "Jie Gao", org: "Stony Brook University", link: "https://www.cs.stonybrook.edu/people/faculty/jiegao" },
+      { name: "Pei Zhang", org: "University of Michigan, Ann Arbor",link:"https://peizhang.engin.umich.edu/" },
+      { name: "Flora Salim", org: "University of New South Wales" ,link:"https://www.unsw.edu.au/staff/flora-salim"},
+      { name: "Mikkel Baun Kjærgaard", org: "University of Southern Denmark",link:"https://mbkj.sdu.dk/" },
+      { name: "Shijia Pan", org: "University of California, Merced",link:"https://www.panslab.com/" },
+      { name: "Pat Pannuto", org: "University of California, San Diego",link:"https://patpannuto.com/" },
+      { name: "Prabal Dutta", org: "University of California, Berkeley",link:"https://people.eecs.berkeley.edu/~prabal/"},
+      { name: "Jie Liu", org: "Harbin Institute of Technology" ,link:"http://faculty.hitsz.edu.cn/liujie?lang=en"},
+      { name: "Chien-Chun Ni", org: "Yahoo! Research",link:"https://www.linkedin.com/in/chienchun-ni/"},
+      { name: "Haeyoung Noh", org: "Stanford University",link:"https://cee.stanford.edu/people/haeyoung-noh" },
+      {name:"Gabe Fierro",org:"Colorado School of Mines"}
+    ].map((member, idx) => (
+      <div key={idx} className="text-center">
+        <h4 className="text-lg font-semibold text-slate-900 mb-1">
+          {member.link ? (
+            <a
+              href={member.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-900 hover:text-slate-600 transition-colors"
+            >
+              {member.name}
+            </a>
+          ) : (
+            member.name
+          )}
+        </h4>
+        <p className="text-slate-600">{member.org}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+              
+
               {/* Web Chair */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
                 <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">Web Chair</h3>
