@@ -645,16 +645,6 @@ export default function DataFMWorkshop() {
     {[
       { name: "Shiwei Fang", org: "Augusta University"},
       {name:"Yasra Chandio",org:"UMass Amherst"},
-      { name: "JeongGil Ko", org: "Yonsei University"},
-      { name: "Tian Guo", org: "WPI"},
-      { name: "Zi Wang", org: "Augusta University"},
-      { name: "Zongxing Xie", org: "Kennesaw State University"},
-      { name: "Jiyue Zhao", org: "UGA"},
-      { name: "Shahriar Nirjon", org: "UNC Chapel Hill"},
-      { name: "Andreas Reinhardt", org: "TU Clausthal"},
-      { name: "Jorge Ortiz", org: "Rutgers"},
-      { name: "Branden Ghena", org: "Northwestern",},
-      { name: "Tamzeed Islam", org: "Amazon",}
     ].map((member, idx) => (
       <div key={idx} className="text-center">
         <h4 className="text-lg font-semibold text-slate-900 mb-1">
@@ -741,6 +731,47 @@ export default function DataFMWorkshop() {
                   <div className="text-center">{/* Empty space for symmetry */}</div>
                 </div>
               </div>
+              
+
+              {/* Technical Program Committee */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+  <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+    Technical Program Committee
+  </h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {[
+      { name: "JeongGil Ko", org: "Yonsei University"},
+      { name: "Tian Guo", org: "WPI"},
+      { name: "Zi Wang", org: "Augusta University"},
+      { name: "Zongxing Xie", org: "Kennesaw State University"},
+      { name: "Jiyue Zhao", org: "UGA"},
+      { name: "Shahriar Nirjon", org: "UNC Chapel Hill"},
+      { name: "Andreas Reinhardt", org: "TU Clausthal"},
+      { name: "Jorge Ortiz", org: "Rutgers"},
+      { name: "Branden Ghena", org: "Northwestern",},
+      { name: "Tamzeed Islam", org: "Amazon",}
+    ].map((member, idx) => (
+      <div key={idx} className="text-center">
+        <h4 className="text-lg font-semibold text-slate-900 mb-1">
+          {member.link ? (
+            <a
+              href={member.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-900 hover:text-slate-600 transition-colors"
+            >
+              {member.name}
+            </a>
+          ) : (
+            member.name
+          )}
+        </h4>
+        <p className="text-slate-600">{member.org}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
             </div>
           </div>
         </div>
