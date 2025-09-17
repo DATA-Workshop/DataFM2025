@@ -610,13 +610,14 @@ export default function DataFMWorkshop() {
                   <h4 className="text-xl font-bold text-slate-900 mb-4 text-center">Submission Link</h4>
                   <div className="text-center">
                     <p className="text-slate-700 mb-4">Submit your papers through the conference submission system:</p>
-                    <button
-                      onClick={handleSubmissionClick}
-                      className="inline-block bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                    >
-                      Submit Paper
-                    </button>
-                    <p className="text-sm text-slate-600 mt-4">Submission link will be available soon</p>
+                    <a
+  href="https://buildsys25-datafm.hotcrp.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+>
+  Submit Paper
+</a>
                   </div>
                 </div>
               </div>
@@ -652,7 +653,8 @@ export default function DataFMWorkshop() {
       { name: "Shahriar Nirjon", org: "UNC Chapel Hill"},
       { name: "Andreas Reinhardt", org: "TU Clausthal"},
       { name: "Jorge Ortiz", org: "Rutgers"},
-      { name: "Branden Ghena", org: "Northwestern",}
+      { name: "Branden Ghena", org: "Northwestern",},
+      { name: "Tamzeed Islam", org: "Amazon",}
     ].map((member, idx) => (
       <div key={idx} className="text-center">
         <h4 className="text-lg font-semibold text-slate-900 mb-1">
