@@ -750,7 +750,8 @@ export default function DataFMWorkshop() {
       { name: "Jorge Ortiz", org: "Rutgers"},
       { name: "Branden Ghena", org: "Northwestern",},
       { name: "Tamzeed Islam", org: "Amazon",},
-      { name: "Zhining Gu", org: "Arizona State University",}
+      { name: "Zhining Gu", org: "Arizona State University",},
+      { name: "Jiani Cao", org: "City University of Hong Kong",}
     ].map((member, idx) => (
       <div key={idx} className="text-center">
         <h4 className="text-lg font-semibold text-slate-900 mb-1">
