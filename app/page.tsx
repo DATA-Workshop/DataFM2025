@@ -617,8 +617,7 @@ export default function DataFMWorkshop() {
     <span className="font-semibold text-slate-900">Camera Ready:</span>
     <div className="flex flex-col text-slate-700">
       <div>
-        <span className="line-through mr-2">October 3, 2025</span>
-        October 17, 2025
+                October 17, 2025
       </div>
     </div>
   </div>
