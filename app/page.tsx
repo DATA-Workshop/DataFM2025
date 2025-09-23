@@ -586,26 +586,49 @@ export default function DataFMWorkshop() {
                       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
-                  Important Dates
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                    <span className="font-semibold text-slate-900">Paper Submission Due:</span>
-                    <span className="text-slate-700">September 30, 2025  11:59 PM AoE</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                    <span className="font-semibold text-slate-900">Notification:</span>
-                    <span className="text-slate-700">October 10, 2025</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                    <span className="font-semibold text-slate-900">Camera Ready:</span>
-                    <span className="text-slate-700">October 17, 2025</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3">
-                    <span className="font-semibold text-slate-900">Workshop Day:</span>
-                    <span className="text-slate-700">November 19, 2025</span>
-                  </div>
-                </div>
+                  Important Dates</h3>
+<div className="space-y-4">
+  {/* Paper Submission */}
+  <div className="flex justify-between items-start py-3 border-b border-slate-200">
+    <span className="font-semibold text-slate-900">Paper Submission Due:</span>
+    <div className="flex flex-col text-slate-700">
+      <div>
+        <span className="line-through mr-2">September 22, 2025</span>
+        September 30, 2025&nbsp;11:59&nbsp;PM AoE
+      </div>
+      <span className="text-sm text-red-600 mt-1">
+        (Firm, no further extensions will be granted)
+      </span>
+    </div>
+  </div>
+
+  {/* Notification */}
+  <div className="flex justify-between items-center py-3 border-b border-slate-200">
+    <span className="font-semibold text-slate-900">Notification:</span>
+    <div className="flex flex-col text-slate-700">
+      <div>
+        October 10, 2025
+      </div>
+    </div>
+  </div>
+
+  {/* Camera Ready */}
+  <div className="flex justify-between items-center py-3 border-b border-slate-200">
+    <span className="font-semibold text-slate-900">Camera Ready:</span>
+    <div className="flex flex-col text-slate-700">
+      <div>
+        <span className="line-through mr-2">October 3, 2025</span>
+        October 17, 2025
+      </div>
+    </div>
+  </div>
+
+  {/* Workshop Day */}
+  <div className="flex justify-between items-center py-3">
+    <span className="font-semibold text-slate-900">Workshop Day:</span>
+    <span className="text-slate-700">November 19, 2025</span>
+  </div>
+</div>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 mt-8">
                   <h4 className="text-xl font-bold text-slate-900 mb-4 text-center">Submission Link</h4>
                   <div className="text-center">
