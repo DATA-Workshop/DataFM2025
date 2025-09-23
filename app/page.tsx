@@ -591,15 +591,15 @@ export default function DataFMWorkshop() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b border-slate-200">
                     <span className="font-semibold text-slate-900">Paper Submission Due:</span>
-                    <span className="text-slate-700">September 22, 2025</span>
+                    <span className="text-slate-700">September 30, 2025  11:59 PM AoE</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-slate-200">
                     <span className="font-semibold text-slate-900">Notification:</span>
-                    <span className="text-slate-700">TBD</span>
+                    <span className="text-slate-700">October 10, 2025</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-slate-200">
                     <span className="font-semibold text-slate-900">Camera Ready:</span>
-                    <span className="text-slate-700">October 3, 2025</span>
+                    <span className="text-slate-700">October 17, 2025</span>
                   </div>
                   <div className="flex justify-between items-center py-3">
                     <span className="font-semibold text-slate-900">Workshop Day:</span>
@@ -774,6 +774,37 @@ export default function DataFMWorkshop() {
   </div>
 </div>
 
+{/* Artifact Evaluation Committee*/}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+  <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+    Artifact Evaluation Committee
+  </h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {[
+      { name: "Hui Wei", org: "UC Merced"},
+      { name: "Jaeho Jin", org: "Yonsei University"}
+    ].map((member, idx) => (
+      <div key={idx} className="text-center">
+        <h4 className="text-lg font-semibold text-slate-900 mb-1">
+          {member.link ? (
+            <a
+              href={member.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-900 hover:text-slate-600 transition-colors"
+            >
+              {member.name}
+            </a>
+          ) : (
+            member.name
+          )}
+        </h4>
+        <p className="text-slate-600">{member.org}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
             </div>
           </div>
         </div>
@@ -824,8 +855,8 @@ export default function DataFMWorkshop() {
               <div>
                 <h4 className="font-semibold text-white mb-4">Important Dates</h4>
                 <div className="space-y-2 text-sm text-slate-400">
-                  <div>Paper Due: Sep 22, 2025</div>
-                  <div>Camera Ready: Oct 3, 2025</div>
+                  <div>Paper Due: Sep 30, 2025</div>
+                  <div>Camera Ready: Oct 17, 2025</div>
                   <div>Workshop: Nov 19, 2025</div>
                 </div>
               </div>
