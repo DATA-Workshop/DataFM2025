@@ -665,8 +665,8 @@ export default function DataFMWorkshop() {
   </h3>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {[
-      { name: "Shiwei Fang", org: "Augusta University"},
-      {name:"Yasra Chandio",org:"UMass Amherst"},
+      { name: "Shiwei Fang", org: "Augusta University", link: "https://shiwei-fang.github.io/"},
+      {name:"Yasra Chandio",org:"UMass Amherst", link: "https://yasrachandio.github.io/"},
     ].map((member, idx) => (
       <div key={idx} className="text-center">
         <h4 className="text-lg font-semibold text-slate-900 mb-1">
@@ -762,18 +762,18 @@ export default function DataFMWorkshop() {
   </h3>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {[
-      { name: "JeongGil Ko", org: "Yonsei University"},
-      { name: "Tian Guo", org: "WPI"},
-      { name: "Zi Wang", org: "Augusta University"},
-      { name: "Zongxing Xie", org: "Kennesaw State University"},
-      { name: "Jiyue Zhao", org: "UGA"},
-      { name: "Shahriar Nirjon", org: "UNC Chapel Hill"},
-      { name: "Andreas Reinhardt", org: "TU Clausthal"},
-      { name: "Jorge Ortiz", org: "Rutgers"},
-      { name: "Branden Ghena", org: "Northwestern",},
-      { name: "Tamzeed Islam", org: "Amazon",},
-      { name: "Zhining Gu", org: "Arizona State University",},
-      { name: "Jiani Cao", org: "City University of Hong Kong",}
+      { name: "JeongGil Ko", org: "Yonsei University",link:"https://sites.google.com/site/jeonggilko/"},
+      { name: "Tian Guo", org: "WPI", link:"https://tianguo.info/"},
+      { name: "Zi Wang", org: "Augusta University", link: "https://ziwang-zw.github.io/"},
+      { name: "Zongxing Xie", org: "Kennesaw State University", link: "https://zongxingxie.github.io/"},
+      { name: "Jiyue Zhao", org: "UGA", link: "https://www.linkedin.com/in/jiyue-zhao-79458a1a3/"},
+      { name: "Shahriar Nirjon", org: "UNC Chapel Hill", link: "https://www.cs.unc.edu/~nirjon/"},
+      { name: "Andreas Reinhardt", org: "TU Clausthal", link: "https://www.areinhardt.de/"},
+      { name: "Jorge Ortiz", org: "Rutgers", link: "https://jorgeortizphd.info/"},
+      { name: "Branden Ghena", org: "Northwestern",link: "https://brandenghena.com/"},
+      { name: "Tamzeed Islam", org: "Amazon",link: "https://www.cs.unc.edu/~tamzeed/"},
+      { name: "Zhining Gu", org: "Arizona State University", link: "https://search.asu.edu/profile/3620707"},
+      { name: "Jiani Cao", org: "City University of Hong Kong",link: "https://jiani-cao.github.io/"}
     ].map((member, idx) => (
       <div key={idx} className="text-center">
         <h4 className="text-lg font-semibold text-slate-900 mb-1">
@@ -803,8 +803,8 @@ export default function DataFMWorkshop() {
   </h3>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {[
-      { name: "Hui Wei", org: "UC Merced"},
-      { name: "Jaeho Jin", org: "Yonsei University"}
+      { name: "Hui Wei", org: "UC Merced", link: "https://wll199566.github.io/davidhuiwei.github.io/"},
+      { name: "Jaeho Jin", org: "Yonsei University", link: "https://www.linkedin.com/in/jaeho-jin-2b0113184/"}
     ].map((member, idx) => (
       <div key={idx} className="text-center">
         <h4 className="text-lg font-semibold text-slate-900 mb-1">
