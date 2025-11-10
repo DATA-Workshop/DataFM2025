@@ -213,7 +213,19 @@ export default function DataFMWorkshop() {
       <div className="text-center mb-12">
         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Program</h2>
         <div className="w-24 h-1 bg-slate-800 mx-auto rounded-full" />
-        <p className="text-slate-600 mt-4 text-sm">All times are local (Golden, Colorado, USA)</p>
+        <p className="text-slate-600 mt-4 text-sm italic">
+  *All times are local (
+  <a
+    href="https://www.timeanddate.com/worldclock/@11788318"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-sky-700 hover:text-sky-900 underline"
+  >
+    Golden, Colorado, USA
+  </a>
+  )
+  <span className="not-italic text-slate-600">(UTC−6)</span>
+</p>
       </div>
 
       <div className="space-y-6">
@@ -222,7 +234,7 @@ export default function DataFMWorkshop() {
           <div className="flex flex-col md:flex-row md:items-start md:justify-between">
             <div className="md:w-40 font-semibold text-slate-900">8:15 – 9:20</div>
             <div className="md:flex-1">
-              <h3 className="font-bold text-slate-900">Opening Remarks & Joint Talk</h3>
+              <h3 className="font-bold text-slate-900">Opening Remarks & Talk</h3>
               <p className="text-slate-700 mt-1">
                 (Jointly with{" "}
                 <a
@@ -251,8 +263,9 @@ export default function DataFMWorkshop() {
                     LLM-Powered Data Annotation for Bridging the Semantic Gap in Air Quality Monitoring
                   </div>
                   <div className="text-sm text-slate-600">
-                    Ragini Gupta, Abbas Ali Mirza, Claudiu Danilov,
-                    Josh Eckhardt, Keyshla Bernard, Klara Nahrstedt
+                    Ragini Gupta, Abbas Ali Mirza (University of Illinois at Urbana-Champaign); Claudiu Danilov,
+Josh Eckhardt, Keyshla Bernard (The Boeing Company, USA); Klara Nahrstedt (University of Illinois
+Urbana-Champaign)
                   </div>
                 </li>
                 <li>
@@ -261,8 +274,10 @@ export default function DataFMWorkshop() {
                     Networks and Foundation Models
                   </div>
                   <div className="text-sm text-slate-600">
-                    Ragini Gupta, Naman Raina, Bo Chen, Li Chen, Claudiu Danilov, Josh Eckhardt, Keyshla Bernard,
-                     Klara Nahrstedt
+                    Ragini Gupta, Naman Raina, Bo Chen (University of Illinois at Urbana-Champaign); Li Chen (University
+of Louisiana at Lafayette); Claudiu Danilov, Josh Eckhardt, Keyshla Bernard (The Boeing Company, USA);
+Klara Nahrstedt (University of Illinois Urbana-Champaign)
+
                   </div>
                 </li>
                 <li>
@@ -270,7 +285,7 @@ export default function DataFMWorkshop() {
                     A Multi-Temporal LiDAR-Derived Geospatial Dataset for Coastal Hazard Assessment
                   </div>
                   <div className="text-sm text-slate-600">
-                    Jiyue Zhao, Zi Wang
+                    Jiyue Zhao (University of Georgia); Zi Wang (Augusta University)
                   </div>
                 </li>
               </ul>
@@ -290,7 +305,7 @@ export default function DataFMWorkshop() {
                     Dataset: Device Activity Report with Complete Knowledge (DARCK) for NILM
                   </div>
                   <div className="text-sm text-slate-600">
-                    Justus Breyer, Kai Gützlaff, Leonardo Pompe, Klaus Wehrle
+                    Justus Breyer, Kai Gützlaff, Leonardo Pompe, Klaus Wehrle (RWTH Aachen University)
                   </div>
                 </li>
                 <li>
@@ -298,7 +313,8 @@ export default function DataFMWorkshop() {
                     Dataset: Long-term LoRaWAN Communication Metadata from an Urban Deployment
                   </div>
                   <div className="text-sm text-slate-600">
-                    Fateme Nikseresht, Victor Ariel Leal Sobral, Jonathan L. Goodall, Bradford Campbell
+                    Fateme Nikseresht, Victor Ariel Leal Sobral, Jonathan L. Goodall, Bradford Campbell (University of
+Virginia)
                   
                   </div>
                 </li>
@@ -308,8 +324,8 @@ export default function DataFMWorkshop() {
                     Experimentation
                   </div>
                   <div className="text-sm text-slate-600">
-                    Jack Adiletta, Khan Mohammad Nur Hossain, Matthew Reynolds,
-                     Shiwei Fang, Bashima Islam
+                    Jack Adiletta, Khan Mohammad Nur Hossain (Worcester Polytechnic Institute); Matthew Reynolds
+(Columbia University); Shiwei Fang (Augusta University); Bashima Islam (Worcester Polytechnic Institute)
                   </div>
                 </li>
               </ul>
