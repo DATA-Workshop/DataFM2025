@@ -224,7 +224,7 @@ export default function DataFMWorkshop() {
     Golden, Colorado, USA
   </a>
   )
-  <span className="not-italic text-slate-600">(UTC−6)</span>
+  <span className="not-italic text-slate-600">(UTC-6)</span>
 </p>
       </div>
 
