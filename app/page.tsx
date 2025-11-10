@@ -61,44 +61,57 @@ export default function DataFMWorkshop() {
               </div>
             </div>
             <div className="hidden lg:flex space-x-8">
-              <a
-                href="#about"
-                className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
-                }}
-              >
-                ABOUT
-              </a>
-              <a
-                href="#cfp"
-                className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.getElementById("cfp")?.scrollIntoView({ behavior: "smooth" })
-                }}
-              >
-                CALL FOR PAPERS
-              </a>
-              <a
-                href="#submission"
-                className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.getElementById("submission")?.scrollIntoView({ behavior: "smooth" })
-                }}
-              >
-                SUBMISSION
-              </a>
-              <a
-                href="#organization"
-                className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.getElementById("organization")?.scrollIntoView({ behavior: "smooth" })
-                }}
-              >
+  <a
+    href="#about"
+    className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
+    onClick={(e) => {
+      e.preventDefault()
+      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+    }}
+  >
+    ABOUT
+  </a>
+
+  {/* NEW: Program button */}
+  <a
+    href="#program"
+    className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
+    onClick={(e) => {
+      e.preventDefault()
+      document.getElementById("program")?.scrollIntoView({ behavior: "smooth" })
+    }}
+  >
+    PROGRAM
+  </a>
+
+  <a
+    href="#cfp"
+    className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
+    onClick={(e) => {
+      e.preventDefault()
+      document.getElementById("cfp")?.scrollIntoView({ behavior: "smooth" })
+    }}
+  >
+    CALL FOR PAPERS
+  </a>
+  <a
+    href="#submission"
+    className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
+    onClick={(e) => {
+      e.preventDefault()
+      document.getElementById("submission")?.scrollIntoView({ behavior: "smooth" })
+    }}
+  >
+    SUBMISSION
+  </a>
+  <a
+    href="#organization"
+    className="text-slate-700 hover:text-slate-900 transition-colors cursor-pointer font-medium text-sm tracking-wide"
+    onClick={(e) => {
+      e.preventDefault()
+      document.getElementById("organization")?.scrollIntoView({ behavior: "smooth" })
+    }}
+  >
                 ORGANIZATION
               </a>
             </div>
@@ -192,6 +205,134 @@ export default function DataFMWorkshop() {
           </div>
         </div>
       </section>
+
+        {/* Program Section */}
+<section id="program" className="py-24 bg-slate-50">
+  <div className="container mx-auto px-6">
+    <div className="max-w-5xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Program</h2>
+        <div className="w-24 h-1 bg-slate-800 mx-auto rounded-full" />
+        <p className="text-slate-600 mt-4 text-sm">All times are local (Golden, Colorado, USA)</p>
+      </div>
+
+      <div className="space-y-6">
+        {/* Opening & Joint Talk */}
+        <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div className="md:w-40 font-semibold text-slate-900">8:15 – 9:20</div>
+            <div className="md:flex-1">
+              <h3 className="font-bold text-slate-900">Opening Remarks & Joint Talk</h3>
+              <p className="text-slate-700 mt-1">
+                (Jointly with{" "}
+                <a
+                  href="https://fmsust.github.io/2025/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-slate-400 hover:text-slate-900"
+                >
+                  FMSust 2025
+                </a>
+                )
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Session 1 */}
+        <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div className="md:w-40 font-semibold text-slate-900">9:30 – 10:30</div>
+            <div className="md:flex-1">
+              <h3 className="font-bold text-slate-900">Technical Session 1</h3>
+              <ul className="list-disc pl-5 space-y-4 mt-3 text-slate-800">
+                <li>
+                  <div className="font-semibold">
+                    LLM-Powered Data Annotation for Bridging the Semantic Gap in Air Quality Monitoring
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    Ragini Gupta, Abbas Ali Mirza, Claudiu Danilov,
+                    Josh Eckhardt, Keyshla Bernard, Klara Nahrstedt
+                  </div>
+                </li>
+                <li>
+                  <div className="font-semibold">
+                    No One-Model-Fits-All: Uncovering Spatio-Temporal Forecasting Trade-offs with Graph Neural
+                    Networks and Foundation Models
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    Ragini Gupta, Naman Raina, Bo Chen, Li Chen, Claudiu Danilov, Josh Eckhardt, Keyshla Bernard,
+                     Klara Nahrstedt
+                  </div>
+                </li>
+                <li>
+                  <div className="font-semibold">
+                    A Multi-Temporal LiDAR-Derived Geospatial Dataset for Coastal Hazard Assessment
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    Jiyue Zhao, Zi Wang
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Session 2 */}
+        <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div className="md:w-40 font-semibold text-slate-900">10:45 – 11:30</div>
+            <div className="md:flex-1">
+              <h3 className="font-bold text-slate-900">Technical Session 2 (Datasets)</h3>
+              <ul className="list-disc pl-5 space-y-4 mt-3 text-slate-800">
+                <li>
+                  <div className="font-semibold">
+                    Dataset: Device Activity Report with Complete Knowledge (DARCK) for NILM
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    Justus Breyer, Kai Gützlaff, Leonardo Pompe, Klaus Wehrle
+                  </div>
+                </li>
+                <li>
+                  <div className="font-semibold">
+                    Dataset: Long-term LoRaWAN Communication Metadata from an Urban Deployment
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    Fateme Nikseresht, Victor Ariel Leal Sobral, Jonathan L. Goodall, Bradford Campbell
+                  
+                  </div>
+                </li>
+                <li>
+                  <div className="font-semibold">
+                    Dataset: A Novel Aliasing vs Non Aliasing Audio Dataset for Always-On IoT Microphone
+                    Experimentation
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    Jack Adiletta, Khan Mohammad Nur Hossain, Matthew Reynolds,
+                     Shiwei Fang, Bashima Islam
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Closing */}
+        <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div className="md:w-40 font-semibold text-slate-900">11:30 – 11:40</div>
+            <div className="md:flex-1">
+              <h3 className="font-bold text-slate-900">Closing Remarks</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+
+      
 
       {/* About Section */}
       <section id="about" className="py-24 bg-white">
