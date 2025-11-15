@@ -232,11 +232,11 @@ export default function DataFMWorkshop() {
         {/* Opening & Joint Talk */}
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-            <div className="md:w-40 font-semibold text-slate-900">8:15 – 9:20</div>
+            <div className="md:w-40 font-semibold text-slate-900">8:30 – 9:15</div>
             <div className="md:flex-1">
               <h3 className="font-bold text-slate-900">Opening Remarks & Talk</h3>
               <p className="text-slate-700 mt-1">
-                (Jointly with{" "}
+                (Jointly with{" "} 
                 <a
                   href="https://fmsust.github.io/2025/"
                   target="_blank"
@@ -246,6 +246,11 @@ export default function DataFMWorkshop() {
                   FMSust 2025
                 </a>
                 )
+              </p>
+              <p className="text-slate-700 mt-1">
+                Opportunities and Challenges with Foundation Models for Smart Environments and Energy Sustainability
+Pandarasamy Arjunan (Indian Institute of Science) 
+                
               </p>
             </div>
           </div>
